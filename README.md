@@ -28,6 +28,16 @@ The User Dashboard:
 All the functioanlites of CRUD Operations and the UI are working correctly as per the requirement 
 
 
+## The backend Database consists of 3 kinds of collections 
+1) Bus Data
+2) Ticket Booked Data
+3) User Login Data
+
+
+This is the screenshot of the firestore db
+![alt text](public/firestore.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
