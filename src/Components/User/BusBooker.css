@@ -1,0 +1,54 @@
+.circle {
+    width: 30px;
+    height: 30px;
+    /* line-height: 200px; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom:  25px;
+    cursor: pointer;
+  }
+  
+
+  .backg{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: white;
+    opacity: 0.8;
+    
+    
+  }
+  .showbook{
+    position:absolute;
+    left:40%;
+    color: darkcyan;
+  }
+
+.driver{
+    padding-left: 0;
+}
+  .window{
+    height: 50%;
+  }
+  .yellow {
+    background-color: yellow;  
+  }
+  .white {
+    background-color: wheat;  
+  }
+  .gray {
+    background-color: gray;  
+  }
+  .green {
+    background-color: #16a085;
+  }
+  .red {
+    background-color: #e74c3c;
+  }
