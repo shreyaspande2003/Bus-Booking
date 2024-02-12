@@ -37,6 +37,26 @@ All the functioanlites of CRUD Operations and the UI are working correctly as pe
 This is the screenshot of the firestore db
 ![alt text](public/firestore.png)
 
+Inside the Admin Page we have the functionaltiies to :
+1) Add New Bus Journey
+2) Delete Bus Data
+3) Update Bus Data
+
+we keep track of a unique bus id for perforimng the CRUD operations and also for storing them in database with the help of these ids.
+
+# Now for User Page 
+we have the home  dashboard of user showing the current buses present  with number of seats left etc
+we also have a filter button on source and destination to filter out corresponding buses.
+
+then as we click on the book button a screen appears like this:
+![alt text](public/Busbook.png)
+
+
+here we can go on for choosing the seat as per our wish 
+the gray ones shows a already booked ones.
+
+
+
 
 # Getting Started with Create React App
 
