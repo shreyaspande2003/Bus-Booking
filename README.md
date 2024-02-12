@@ -49,7 +49,7 @@ we have the home  dashboard of user showing the current buses present  with numb
 we also have a filter button on source and destination to filter out corresponding buses.
 
 then as we click on the book button a screen appears like this:
-![alt text](public/Busbook.png)
+![alt text](public/Busbook1.png)
 
 
 here we can go on for choosing the seat as per our wish 
