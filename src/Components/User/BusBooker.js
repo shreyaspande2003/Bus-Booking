@@ -169,7 +169,7 @@ const unsubscribe = await onSnapshot(q, (querySnapshot) => {
         <div className="row col-md-6 window">
           
           <div className="col">
-          <div className="row "><div class="col col-md-2  circle green align-self-end" style={{ position:"absolute",left:"16.5%"}} >Dr</div> </div>
+          <div className="row "><div class="col col-md-2  circle green align-self-end" style={{ position:"absolute",left:"18.5%"}} >Dr</div> </div>
         
 
         {

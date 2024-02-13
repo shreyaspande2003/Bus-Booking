@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { auth } from "../../firebase";
 import db from "../../firebase";
+import { useNavigate } from "react-router-dom";
 import { collection,doc,setDoc,getDoc,serverTimestamp,deleteDoc  } from "firebase/firestore";
 
 const CreateBus = () => {
@@ -11,6 +12,7 @@ const[from,setfrom]=useState();
 const[to,setto]=useState();
 const[occupancy,setoccupancy]=useState();
 const[content,setcontent]=useState(null);
+const navigate = useNavigate();
 
 
 const checkdb = async (e) => {
@@ -47,8 +49,9 @@ const deletedb = async (e) => {
 
         await deleteDoc(doc(db, "bus-data", id));
         
+
         alert("permanently deleted");  
-        
+        navigate("/admin");
         
     } catch (error) {
         console.error("Error adding user data to Firestore: ", error);
