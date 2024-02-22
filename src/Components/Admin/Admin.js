@@ -6,11 +6,14 @@ import { useState } from "react";
 import CreateBus from "./CreateBus";
 import DeleteBus from "./DeleteBus"
 import ChangeBus from "./ChangeBus";
+import ShowBuses from "./ShowBuses";
 const Profile = () => {
     const user = auth.currentUser;
     const [showupdate,setshowupdate]=  useState(false);
 
     const [showdelete,setshowdelete]=  useState(false);
+
+    const [showbuses,setshowbuses]=  useState(false);
 
     const [change,setchange]=useState(false);
      function showfunc() {
@@ -27,14 +30,18 @@ const Profile = () => {
         if(change){
             return (<ChangeBus/>)
         }
+        if(showbuses){
+            return (<ShowBuses></ShowBuses>)
+        }
     }
+    
     return(
         <div>
             <Navbar />
             <div className = "container">
             
                 <div className = "row justify-content-center">
-                    <div className = "col-md-7 text-center">
+                    <div className = "col-md-8 text-center">
                         <p>Welcome <em className = "text-decoration-underline">{ user.email }</em>. You are logged in as a admin! choose the options you want to go for ....</p>
                         
                         <button className="btn btn-primary btn-lg" onClick={()=>{setshowupdate(true); setshowdelete(false);setchange(false);}}>Add new Bus Data</button>
@@ -42,10 +49,13 @@ const Profile = () => {
                         <button className="btn btn-primary btn-lg" onClick={()=>{setshowupdate(false); setshowdelete(true);setchange(false);}}>Delete Bus Data</button>
 &nbsp;&nbsp;&nbsp;&nbsp;
                         <button className="btn btn-primary btn-lg" onClick={()=>{setshowupdate(false); setshowdelete(false);setchange(true);}}>Update Bus Data</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+<button className="btn btn-primary btn-lg" onClick={()=>{setshowupdate(false); setshowdelete(false);setchange(false);setshowbuses(true);}}>List Bus Data</button>
 
                         <br></br><br></br><br></br><br></br>
                     </div>
-                    
+
                 </div>
             </div>  
 

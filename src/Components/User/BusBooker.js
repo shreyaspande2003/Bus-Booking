@@ -68,9 +68,6 @@ const unsubscribe = await onSnapshot(q, (querySnapshot) => {
         return ;
       }
 
-
-
-      
       
 
       //  from here
@@ -133,6 +130,21 @@ const unsubscribe = await onSnapshot(q, (querySnapshot) => {
     
         // Table header
     
+        const r = [];
+        for(let j=0;j<m;j++){
+
+              
+          
+          r.push(
+            <div className="col" style={{padding: "0"}} >
+                  <div className={(j==m-1?"circle green":"circle white")}    >D </div>
+            </div>
+          )
+        
+      }
+
+      table.push(<div className="row">{r}</div>)
+
 
     
         for(let i=0;i<n;i++){
@@ -169,7 +181,6 @@ const unsubscribe = await onSnapshot(q, (querySnapshot) => {
         <div className="row col-md-6 window">
           
           <div className="col">
-          <div className="row "><div class="col col-md-2  circle green align-self-end" style={{ position:"absolute",left:"18.5%"}} >Dr</div> </div>
         
 
         {

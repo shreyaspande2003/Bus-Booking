@@ -75,6 +75,8 @@ const checkdb = async (e) => {
             setto(docSnap.data().to);
             setoccupancy(docSnap.data().occupancy);
             setdays(docSnap.data().workingdays);
+            setrows(docSnap.data().rows)
+            setcols(docSnap.data().cols)
             console.log(id);
             alert("Bus Found... update acordingly");
         //   console.log("Document data:", docSnap.data());

@@ -138,6 +138,7 @@ const User = () => {
 <form>
   <div class="row">
     <div class="col">
+        
       <input type="text"onChange={(e)=>{setfrom(e.target.value)}} class="form-control" placeholder="From"/>
     </div>
     <div class="col">
